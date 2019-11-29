@@ -74,6 +74,28 @@ public class EjerciciosBasicosJava {
         }
         return false;
     }
+    
+        //ejercicio 9 
+    public int loteria (int a, int b, int c) {
+        if (a == 2 && b == 2 && c == 2) {
+            return 10;
+        }
+        if (a == 0 && b == 0 && c == 0 || a == 1 && b == 1 && c == 1) {
+            return 5;
+        }
+        if (a == b || a == c || b == c) {
+            return 0;
+        }
+        return 1;
+    }
+    
+        //ejercicio 10
+    public int withoutDoubles (int num1, int num2, boolean noDoubles) {
+        if (num1 == num2 && noDoubles) {
+            return num1 + num2 + 1;
+        }
+        return num1 + num2;
+    }
    
     
     
@@ -124,6 +146,17 @@ public class EjerciciosBasicosJava {
         System.out.println("menos20 (18): " + ejercicios.menos20(18));
         System.out.println("menos20 (19): " + ejercicios.menos20(19));
         System.out.println("menos20 (20): " + ejercicios.menos20(20));
+        
+            //testeo del ejercicio 9
+        System.out.println("loteria (2,2,2): " + ejercicios.loteria(2,2,2));
+        System.out.println("loteria (2,2,1): " + ejercicios.loteria(2,2,1));
+        System.out.println("loteria (0,0,0): " + ejercicios.loteria(0,0,0));
+        
+            //testeo del ejercicio 10
+        System.out.println("withoutDoubles (2,3,true): " + ejercicios.withoutDoubles(2, 3, true));
+        System.out.println("withoutDoubles (3,3,true): " + ejercicios.withoutDoubles(3, 3, true));
+        System.out.println("withoutDoubles (3,3,false): " + ejercicios.withoutDoubles(3, 3, false));
+        System.out.println("withoutDoubles (6,6,true): " + ejercicios.withoutDoubles(6, 6, true));
     }
     
 }
