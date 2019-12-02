@@ -2,7 +2,7 @@ package ejerciciosbasicosjava;
 
 /**
  *
- * @author mirenordonezdearce
+ * @author Miren Ordóñez 
  */
 public class EjerciciosBasicosJava {
         //ejercicio 1
